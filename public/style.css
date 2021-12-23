@@ -1,7 +1,115 @@
-code {
-    background-color: whitesmoke;
+*{margin:0px; padding:0px;}
+
+body{
+    background: linear-gradient(170deg, #21b5c0 50%, #36b340);
+    background-attachment: fixed;
 }
 
-section, header {
-    margin: 50px;
+#container{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgb(71, 69, 69);
+    border-radius: 10px;
+    color: white;
 }
+
+#container div{
+    margin:20px 10px;
+}
+
+.gap{
+    margin: 20px 0;
+}
+
+#exampleDiv *{
+    margin:10px;
+}
+
+#frontEnd{
+    display: flex;
+    flex-direction: column;
+}
+
+#frontEnd *{
+    margin: 8px;
+}
+
+#convertForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(78, 22, 0);
+    margin: 6px;
+    box-shadow: 1px 1px 5px 2px #224b4b;
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, rgb(226, 212, 226),rgb(241, 145, 145)) ;
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+    max-width: 300px;
+}
+
+#convertForm *{
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.myBtn{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    border: 0;
+    color: rgb(78, 22, 0);
+    background-color: transparent;
+    border: solid 2px rgb(78, 22, 0);
+  }
+
+  .myBtn:hover{
+    background-color: rgb(78, 22, 0);
+    box-shadow: 1px 1px 2px 2px #224b4b;
+    color: white
+  }
+pre{
+    background-color: rgb(83, 81, 81);
+    color: whitesmoke;
+    border-left: solid 3px tomato;
+    padding: 5px;
+    margin: 15px;
+    display: block;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-overflow: clip;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word; 
+  }p, code{
+    font-family: monospace;
+    padding: 4px;
+    line-height: 20px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;  
+    transition: 2s;
+  }.form-control{
+    height: 34px;
+    padding: 5px;
+    font-size: 90%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+  }.form-control:focus{
+    outline: none;
+  }p, code{
+      font-size: 14px;
+  }
